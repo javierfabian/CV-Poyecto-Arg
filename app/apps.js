@@ -24,7 +24,7 @@ function crearBarra(id_barra){
     for(i=0;i<=16;i++){
         let div = document.createElement("div");
         div.className = "e";
-        id_barra-appendChild(div);
+        id_barra.appendChild(div);
     }
 }
 
@@ -33,7 +33,7 @@ function crearBarra(id_barra){
 let html = document.getElementById("html");
 crearBarra(html);
 let javascript = document.getElementById("javascript");
-crearBarra(jaavascript);
+crearBarra(javascript);
 let wordpress = document.getElementById("wordpress");
 crearBarra(wordpress);
 let photoshop = document.getElementById("photoshop");
@@ -48,7 +48,7 @@ crearBarra(ilustrator);
 //comienza en -1 porque no tiene ninguna pintada al iniciarse
 let contadores = [-1,-1,-1,-1,-1,-1];
 //variable siguiente la voy a utilizar de flag para saber si se ejecuto la animacion
-let ento = false;
+let entro = false;
 
 //funcion aplica las animaciones de las habilidades
 function efectoHabilidades(){
@@ -57,28 +57,28 @@ function efectoHabilidades(){
     if(distancia_skills>=300 && entro==false){
         entro = true;
         const intervalHtml = setInterval(function(){
-            pintaBarra(html, 16, 0, intervalHtml);
+            pintarBarra(html, 16, 0, intervalHtml);
         },100);
         const intervalJavascript = setInterval(function(){
-            pintaBarra(javascript, 11, 1, intervalJavascript);
+            pintarBarra(javascript, 11, 1, intervalJavascript);
         },100);
         const intervalWordpress = setInterval(function(){
-            pintaBarra(wordpress, 11, 2, intervalWordpress);
+            pintarBarra(wordpress, 11, 2, intervalWordpress);
         },100);
         const intervalPhotoshop = setInterval(function(){
-            pintaBarra(photoshop, 15, 3, intervalPhotoshop);
+            pintarBarra(photoshop, 15, 3, intervalPhotoshop);
         },100);
         const intervalPhp = setInterval(function(){
-            pintaBarra(php, 16, 4, intervalPhp);
+            pintarBarra(php, 16, 4, intervalPhp);
         },100);
         const intervalIlustrator = setInterval(function(){
-            pintaBarra(ilustrator, 11, 5, intervalIlustrator);
+            pintarBarra(ilustrator, 11, 5, intervalIlustrator);
         },100);
     }
 }
 
 //lleno una barra particular con la cantidad indicada
-function pintaBarra(id_barra, cantidad, indice, interval){
+function pintarBarra(id_barra, cantidad, indice, interval){
     contadores[indice]++;
     x = contadores[indice];
     if(x < cantidad){
