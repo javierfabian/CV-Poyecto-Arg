@@ -34,14 +34,14 @@ let html = document.getElementById("html");
 crearBarra(html);
 let javascript = document.getElementById("javascript");
 crearBarra(javascript);
-let wordpress = document.getElementById("wordpress");
-crearBarra(wordpress);
-let photoshop = document.getElementById("photoshop");
-crearBarra(photoshop);
-let php = document.getElementById("php");
-crearBarra(php);
-let ilustrator = document.getElementById("ilustrator");
-crearBarra(ilustrator);
+let SEGURIDADINFORMATICA = document.getElementById("seguridad informatica");
+crearBarra(SEGURIDADINFORMATICA);
+let REDES = document.getElementById("redes");
+crearBarra(REDES);
+let VSC = document.getElementById("vsc");
+crearBarra(VSC);
+let RUBY = document.getElementById("ruby");
+crearBarra(RUBY);
 
 // a guardar cantidad de barritas que se van a ir pintando por cada barar
 //se usa un array, cada posicion pertenece a un elemneto
@@ -56,23 +56,23 @@ function efectoHabilidades() {
     var distancia_skills = Window.innerHeight - habilidades.getBoundingClientRect().top;
     if (distancia_skills >= 300 && entro == false) {
         entro = true;
-        const intervalHtml = setInterval(function() {
-            pintarBarra(html, 16, 0, intervalHtml);
+        const intervalhtml = setInterval(function() {
+            pintarBarra(html, 16, 0, intervalhtml);
         }, 100);
-        const intervalJavascript = setInterval(function() {
-            pintarBarra(javascript, 11, 1, intervalJavascript);
+        const intervaljavascript = setInterval(function() {
+            pintarBarra(javascript, 11, 1, intervaljavascript);
         }, 100);
-        const intervalWordpress = setInterval(function() {
-            pintarBarra(wordpress, 11, 2, intervalWordpress);
+        const intervalSEGURIDADINFORMATICA = setInterval(function() {
+            pintarBarra(SEGURIDADINFORMATICA, 11, 2, intervalSEGURIDADINFORMATICA);
         }, 100);
-        const intervalPhotoshop = setInterval(function() {
-            pintarBarra(photoshop, 15, 3, intervalPhotoshop);
+        const intervalREDES = setInterval(function() {
+            pintarBarra(REDES, 15, 3, intervalREDES);
         }, 100);
-        const intervalPhp = setInterval(function() {
-            pintarBarra(php, 16, 4, intervalPhp);
+        const intervalVSC = setInterval(function() {
+            pintarBarra(VSC, 16, 4, intervalVSC);
         }, 100);
-        const intervalIlustrator = setInterval(function() {
-            pintarBarra(ilustrator, 11, 5, intervalIlustrator);
+        const intervalRUBY = setInterval(function() {
+            pintarBarra(RUBY, 11, 5, intervalRUBY);
         }, 100);
     }
 }
