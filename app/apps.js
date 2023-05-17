@@ -53,7 +53,7 @@ let entro = false;
 //funcion aplica las animaciones de las habilidades
 function efectoHabilidades() {
     var habilidades = document.getElementById("habilidades");
-    var distancia_skills = Window.innerHeight - habilidades.getBoundingClientRect().top;
+    var distancia_skills = innerHeight - habilidades.getBoundingClientRect().top;
     if (distancia_skills >= 300 && entro === false) {
         entro = true;
         const intervalhtml = setInterval(function() {
@@ -63,16 +63,16 @@ function efectoHabilidades() {
             pintarBarra(javascript, 11, 1, intervaljavascript);
         }, 100);
         const intervalSEGURIDADINFORMATICA = setInterval(function() {
-            pintarBarra(SEGURIDADINFORMATICA, 11, 2, intervalSEGURIDADINFORMATICA);
+            pintarBarra(SEGURIDADINFORMATICA, 14, 2, intervalSEGURIDADINFORMATICA);
         }, 100);
         const intervalREDES = setInterval(function() {
-            pintarBarra(REDES, 15, 3, intervalREDES);
+            pintarBarra(REDES, 13, 3, intervalREDES);
         }, 100);
         const intervalCSS1 = setInterval(function() {
             pintarBarra(CSS1, 16, 4, intervalCSS1);
         }, 100);
         const intervalRUBY = setInterval(function() {
-            pintarBarra(RUBY, 11, 5, intervalRUBY);
+            pintarBarra(RUBY, 12, 5, intervalRUBY);
         }, 100);
     }
 }
