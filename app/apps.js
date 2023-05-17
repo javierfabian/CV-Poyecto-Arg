@@ -34,12 +34,12 @@ let html = document.getElementById("html");
 crearBarra(html);
 let javascript = document.getElementById("javascript");
 crearBarra(javascript);
-let SEGURIDADINFORMATICA = document.getElementById("seguridad informatica");
+let SEGURIDADINFORMATICA = document.getElementById("seguridadinformatica");
 crearBarra(SEGURIDADINFORMATICA);
 let REDES = document.getElementById("redes");
 crearBarra(REDES);
-let VSC = document.getElementById("vsc");
-crearBarra(VSC);
+let CSS1 = document.getElementById("css1");
+crearBarra(CSS1);
 let RUBY = document.getElementById("ruby");
 crearBarra(RUBY);
 
@@ -54,7 +54,7 @@ let entro = false;
 function efectoHabilidades() {
     var habilidades = document.getElementById("habilidades");
     var distancia_skills = Window.innerHeight - habilidades.getBoundingClientRect().top;
-    if (distancia_skills >= 300 && entro == false) {
+    if (distancia_skills >= 300 && entro === false) {
         entro = true;
         const intervalhtml = setInterval(function() {
             pintarBarra(html, 16, 0, intervalhtml);
@@ -68,8 +68,8 @@ function efectoHabilidades() {
         const intervalREDES = setInterval(function() {
             pintarBarra(REDES, 15, 3, intervalREDES);
         }, 100);
-        const intervalVSC = setInterval(function() {
-            pintarBarra(VSC, 16, 4, intervalVSC);
+        const intervalCSS1 = setInterval(function() {
+            pintarBarra(CSS1, 16, 4, intervalCSS1);
         }, 100);
         const intervalRUBY = setInterval(function() {
             pintarBarra(RUBY, 11, 5, intervalRUBY);
